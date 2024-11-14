@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP - COLOR MAKER</title>
+        <meta charset="UTF-8"/>
+        <link href="style/habit.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="images/pinceau.png" type="image/png">
+    </head>
+    <header id="header_block">
+        <div id="t1"></div>
+        <h1 class="title">COLOR MAKER</h1>
+    <ul id="header_list">
+        <il><a class="element_list" id="dmenu" href="pompe.html">Débit Pompe</a></il>
+        <il><a class="element_list" id="cmenu" href="conversion.html">ConversionHexa</a></il>
+        <il><a class="element_list" id="memenu" href="main.html">Color Maker</a></il>
+        <il><a class="element_list" id="vmenu" href="vote.html">Vote présidentiel</a></il>
+        <il><a class="element_list" id="pmenu" href="profil.html">Profil</a></il>
+    </ul>
+</header>
+    <body>
+        <div id="t2">
+            <h1>Choix catalogue ou personnel</h1>
+            <form method="GET" action="php/commande.php">
+            <input id="radioCatalogue" type="radio" name="Energie" value ="ON" CHECKED >Catalogue
+            <input id="radioPersonnel" type="radio" name="Energie" value ="OFF" >Personnel
+            
+        </div>
+        <br>
+        <div class="catalogue">
+        <span class="txt1">Choix catalogue</span><br>
+            <select  id="Catalogue"name="choix">
+                <option value="rouge">Rouge</option>
+                <option value="jaune">Jaune</option>
+                <option value="vert">Vert</option>
+                <option value="bleu">Bleu</option>
+            </select>
+            <hr>
+        </div>
+        <div id="test2">
+            <div id="couleur"></div>
+            <div class="listes">
+                <div class="bslide">
+                    <span>ROUGE</span>
+                    <input class="slide" id="rangeRouge" type="range" name="rouge" min="0" max="255" value="90" step="10" /><br>
+                    <span>Décimal = </span><output name="rouge" type="text" id="vRouge"></output> 
+                </div>
+                <div class="bslide">
+                    <span>VERT</span>
+                    <input class="slide" id="rangeVert" type="range" name="vert" min="0" max="255" value="90" step="10" /><br>
+                    <span>Décimal = </span><output name="vert" type="text" id="vVert"></output>
+                </div>
+                <div class="bslide">
+                    <span>BLEU</span>
+                    <input class="slide" id="rangeBleu" type="range" name="bleu" min="0" max="255" value="90" step="10" /><br>
+                    <span>Décimal = </span><output name="vert" type="text" id="vBleu"></output> 
+                </div><br>
+            </div>
+
+            <input id ="inputRouge" name="valeurRouge" type="hidden">
+            <input id ="inputVert" name="valeurVert" type="hidden">
+            <input id ="inputBleu" name="valeurBleu" type="hidden">
+            
+        </div>
+        <div id="qt">
+            <hr>
+            <span>Quantité</span><br>
+            <select name="quantite">
+                <option value="0.5">0,5 litre</option>
+                <option value="1">1 litre</option>
+                <option value="5">5 litres</option>
+            </select>
+            <br><hr>
+        </div>
+        <div id="coo">
+            <h2>Vos Coordonnées</h2><br>
+                <div>
+                    <span>Nom:</span><input class="zonetxt"  type="text" name="Nom" size = 25 required>
+                    <span>Prénom:</span><input class="zonetxt" type="text" name="Prenom" size = 25 required><br>
+                    <br>
+                </div>
+                <div class="test5">
+                    <span class="adresse">Adresse</span><br><textarea class="zonetxt" name="Adresse" rows = "6" cols= "60" required></textarea><br>
+                    <input type="submit" name="envoyer" value="Envoyer">
+ 
+                    <input type="reset" name="Annuler" value="Annuler">
+                </div>
+            </form>
+    </body>
+<script src="script/tt.js"></script>
+</html>

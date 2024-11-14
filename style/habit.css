@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(232, 235, 236);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.catalogue{
+    top: 20px;
+}
+
+#header_block{
+    position: sticky;
+    padding: 40px;
+    top: 0px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.445);
+    box-shadow: 0px 0px 10px #000000;
+    margin-top: 0px;
+    background-color: #c9c8c8;
+}
+
+
+.title{
+    position: absolute;
+    text-align: center;
+    float: left;
+    font-size: 40px;
+    margin: 20px;
+    top: 0%;
+    left: 0%;
+}
+
+.element_list{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 3px;
+    color:inherit;
+    text-decoration: none;
+    transition: 0.6s;
+    background-color: rgb(43, 255, 255);
+}
+
+.element_list:hover{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 5px;
+    color:inherit;
+    text-decoration: none;
+    background-color: rgb(43, 255, 255);
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+
+
+#header_list{
+    position: absolute;
+    justify-content:center;
+    align-items: center;
+    margin: 0px;
+    top: 30px;
+    right: 0%;
+    bottom: 0%;
+}
+
+.ligne1{
+    border-width: 8px;
+}
+
+.txt1{
+    font-size: 25px;
+}
+
+.rangeR{
+    position: relative;
+    left: 0px;
+    top: 40px;
+    background-color: rgb(141, 86, 19);
+}
+
+.slide{
+    left: 65px;
+    position: absolute;
+    background-color: aquamarine;
+    border: 2px solid;
+}
+
+.zonetxt{
+    background-color: aqua;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+.bslide{
+    width: 10px;
+    height: 40px;
+}
+
+.gboite{
+    position: absolute;
+    top: 30px;
+}
+
+#test2{
+    position: relative;
+}
+
+#couleur{
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    border: 3px solid rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;;
+}
+
+.listes{
+    margin: 10px;
+}
+
+
+#qt{
+    position: relative;
+    top: 10px;
+}
+
+#coo{
+    position: relative;
+    width: auto;
+    float: center;
+    text-align: center;
+}
+
+.test5{
+    text-align: center;
+}
+
+.vValue{
+    background-color: blue;
+    position: absolute;
+    border: 3px solid rgb(0, 0, 0);
+}

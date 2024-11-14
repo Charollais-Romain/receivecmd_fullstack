@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP - DEBIT POMPE</title>
+        <meta charset="UTF-8"/>
+        <link href="style/pompe_style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="images/pinceau.png" type="image/png">
+    </head>
+    <header id="header_block">
+        <div id="t1"></div>
+        <h1 class="title">DEBIT POMPE</h1>
+    <ul id="header_list">
+        <il><a class="element_list" id="dmenu" href="pompe.html">Débit Pompe</a></il>
+        <il><a class="element_list" id="cmenu" href="conversion.html">ConversionHexa</a></il>
+        <il><a class="element_list" id="memenu" href="main.html">Color Maker</a></il>
+        <il><a class="element_list" id="vmenu" href="vote.html">Vote présidentiel</a></il>
+        <il><a class="element_list" id="pmenu" href="profil.html">Profil</a></il>
+    </ul>
+</header>
+    <body>
+        <span>gestion du débit en ml/h</span>
+
+    <div>
+        <span> débit en ml/h:</span>
+        <input readonly="readonly" id="debittxt" class="zonetxt"  type="text" name="debit" size = 10 required>
+    </div>
+        <div>
+            <div class="ligneu">
+                <input class="bt" type="button" id="centp" value="+"></input>
+                <input class="bt" type="button" id="centm" value="-"></input>
+                <span>CENTAINE</span>
+            </div>
+            <div class="ligneu"></div>
+                <input class="bt" type="button" id="dizp" value="+"></input>
+                <input class="bt" type="button" id="dizm" value="-"></input>
+                <span>DIZAINE</span>
+            </div>
+            <div class="ligneu">
+                <input class="bt" type="button" id="unitp" value="+"></input>
+                <input class="bt" type="button" id="unitm" value="-"></input>
+                <span>UNITE</span>
+            </div>
+        </div>
+
+        <form method="GET" action="php/addition.php">
+            Entrer un nombre:
+            <input type="textbox" name="val1"/><br>
+            Entrer un nombre:
+            <input type="textbox" name="val2"/><br>
+            <input type="submit" name="Envoyer"/>
+            <input type="reset" name="Annuler"/><br>
+            </form> 
+        <script src="script/pp.js"></script>
+    </body>

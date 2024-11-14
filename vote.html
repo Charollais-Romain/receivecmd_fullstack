@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP - COLOR MAKER</title>
+        <meta charset="UTF-8"/>
+        <link href="style/vote.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="images/pinceau.png" type="image/png">
+    </head>
+    <header id="header_block">
+        <div id="t1"></div>
+        <h1 class="title">VOTE PRESIDENTIEL</h1>
+    <ul id="header_list">
+        <il><a class="element_list" id="dmenu" href="pompe.html">Débit Pompe</a></il>
+        <il><a class="element_list" id="cmenu" href="conversion.html">ConversionHexa</a></il>
+        <il><a class="element_list" id="memenu" href="main.html">Color Maker</a></il>
+        <il><a class="element_list" id="vmenu" href="vote.html">Vote présidentiel</a></il>
+        <il><a class="element_list" id="pmenu" href="profil.html">Profil</a></il>
+    </ul>
+</header>
+<body>
+    <h1> Sondage des votes pour la présidentielle 2017</h1>
+    <form method="GET" action="vote.php">
+        <input type="radio" name="candidat" value="1">Nicolas Dupont-Aignan <br>
+        <input type="radio" name="candidat" value="2">Emmanuel Macron<br>
+        <input type="radio" name="candidat" value="3">Benoît Hamon<br>
+        <input type="radio" name="candidat" value="4">Nathalie Arthaud<br>
+        <input type="radio" name="candidat" value="5">Philippe Poutou<br>
+        <input type="radio" name="candidat" value="6">Jean-Luc Mélenchon<br>
+        <input type="radio" name="candidat" value="7">Jean Lassalle<br>
+        <input type="submit" name="Commander" value="Envoyer">
+        <input type="reset" name="Annuler" value="Annuler">
+    </form>
+    <span>Accédez directement aux <a href="vote.php">résultats</a></span>
+</body>
