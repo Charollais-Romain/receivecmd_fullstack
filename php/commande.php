@@ -111,10 +111,8 @@
                     echo "<br> Quantite Noir = ".$noir;
                     echo "<br> Quantite Blanc = ".$blanc;
 
-            } else echo 'Erreur requette' ;
-            
-  
+            } else echo 'Erreur SUPERREQUETE' ;
         ?>
-            
+   
     </body>
 </html>
